@@ -266,6 +266,9 @@ module.exports = function createViewer(container) {
   }
   
   function readStl(oFile, vs, fs) {
+    if (oFile instanceof ArrayBuffer) return arrayBufferToBinaryString(oFile, function(stl) {
+      readBinaryStl(stl, vs, fs)
+    })
     var solididx = oFile.search("solid")
     if (solididx > -1 && solididx < 10) {
       var l = oFile.split(/[\r\n]/g)
@@ -344,6 +347,15 @@ module.exports = function createViewer(container) {
     }
     var file = f[0]
     reader.readAsBinaryString(file)
+  }
+  
+  function arrayBufferToBinaryString(buf, callback) {
+    var blob = new Blob([buf])
+    var f = new FileReader()
+    f.onload = function(e) {
+      callback(e.target.result)
+    }
+    f.readAsBinaryString(blob)
   }
 
   function example(file) {

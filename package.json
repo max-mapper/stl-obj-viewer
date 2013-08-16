@@ -1,6 +1,6 @@
 {
   "name": "stl-obj-viewer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "uses three.js to display a 3D stl or obj file",
   "main": "index.js",
   "keywords": ["ndarray"],
