@@ -1,6 +1,6 @@
 # stl-obj-viewer
 
-uses three.js to display a stl or obj file
+uses three.js to display a stl or obj file. based on [http://lazarsoft.info/objstl/](http://lazarsoft.info/objstl/)
 
 [![NPM](https://nodei.co/npm/stl-obj-viewer.png)](https://npmjs.org/stl-obj-viewer)
 
