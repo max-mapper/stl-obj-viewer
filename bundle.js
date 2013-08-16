@@ -7,7 +7,7 @@ var stl = require('ndarray-stl')
 var zeros = require('zeros')
 
 var viewer = stlViewer(document.querySelector('#one'))
-// var viewer2 = stlViewer(document.querySelector('#two'))
+var viewer2 = stlViewer(document.querySelector('#two'))
 
 var scale = 0.075
 var threshold = 0.125
