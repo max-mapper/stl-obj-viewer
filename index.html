@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>stl obj viewer</title>
     <style type="text/css">
+      @font-face {
+        font-family: 'azuki';
+        src: url('azuki_font.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      document, body { font-family: 'azuki'; }
       .webgl {
         float: left;
         margin-right: 10px;
@@ -16,6 +23,10 @@
     
 </head>
 <body>
+  <h3>STL + OBJ 3D viewer</h3>
+  <p>you can drag and drop your own into either box to see them</p>
+  <p>these are two voxel volumes converted to STL and then rendered</p>
+  <p><a href="https://nodei.co/npm/stl-obj-viewer/"><img src="https://nodei.co/npm/stl-obj-viewer.png"></a></p>
   <div class="webgl" id="one"></div>
   <div class="webgl" id="two"></div>
   <script src="bundle.js" type="text/javascript"></script>
