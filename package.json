@@ -1,0 +1,23 @@
+{
+  "name": "stl-obj-viewer",
+  "version": "0.0.0",
+  "description": "uses three.js to display a 3D stl or obj file",
+  "main": "index.js",
+  "keywords": ["ndarray"],
+  "scripts": {
+    "start": "beefy demo.js:bundle.js"
+  },
+  "author": "max ogden",
+  "license": "BSD",
+  "dependencies": {
+    "three": "~0.58.9"
+  },
+  "devDependencies": {
+    "ndarray-fill": "~0.1.0",
+    "zeros": "0.0.0",
+    "ndarray-stl": "~1.0.1",
+    "ndarray": "~1.0.6",
+    "perlin": "~1.0.0",
+    "ndarray-continuous": "~0.4.1"
+  }
+}
